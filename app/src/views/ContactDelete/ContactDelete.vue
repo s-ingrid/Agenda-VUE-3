@@ -14,7 +14,7 @@
 import { defineComponent } from 'vue'
 import Dialog from 'primevue/dialog'
 import Button from 'primevue/button'
-import axios from 'axios'
+import axios from '../../axios-config'
 import Toast from 'primevue/toast'
 import { useToast } from 'primevue/usetoast'
 
@@ -40,7 +40,7 @@ export default defineComponent({
     const toast = useToast()
     async function deleteContact(form) {
       try {
-        await axios.delete(`http://127.0.0.1:8000/api/delete_contato/${form.id}`)
+        await axios.delete(`delete_contato/${form.id}`)
         emit('editContract')
         toast.add({ severity: 'success', summary: 'Sucesso', detail: 'Contato removido!', life: 3000 })
       } catch (error) {

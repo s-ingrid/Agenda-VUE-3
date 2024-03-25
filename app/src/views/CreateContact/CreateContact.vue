@@ -39,7 +39,7 @@
 
 <script>
 import { computed, defineComponent, onMounted, reactive, toRefs, watch } from 'vue'
-import axios from 'axios'
+import axios from '../../axios-config'
 import InputText from 'primevue/inputtext'
 import InputGroup from 'primevue/inputgroup'
 import InputGroupAddon from 'primevue/inputgroupaddon'
@@ -76,7 +76,7 @@ export default defineComponent({
     })
     async function saveContact (form) {
       try {
-        await axios.post('http://127.0.0.1:8000/api/create_contato', form)
+        await axios.post('create_contato', form)
         state.form = {}
         toast.add({ severity: 'success', summary: 'Sucesso', detail: 'Contato salvo!', life: 3000 })
       } catch (error) {

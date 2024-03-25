@@ -38,7 +38,7 @@
 
 <script>
 import { defineComponent, onMounted, reactive, toRefs } from 'vue'
-import axios from 'axios'
+import axios from '../../axios-config'
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import InputText from 'primevue/inputtext'
@@ -72,7 +72,7 @@ export default defineComponent({
     })
     async function getAllContacts () {
       try {
-        const result = await axios.get('http://127.0.0.1:8000/api/contatos')
+        const result = await axios.get('contatos')
         if (Array.isArray(result.data.contatos) && result.data.contatos.length > 0) {
           state.contatos = result.data.contatos
         }

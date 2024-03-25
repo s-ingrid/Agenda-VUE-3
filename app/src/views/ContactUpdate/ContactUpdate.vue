@@ -33,7 +33,7 @@ import InputText from 'primevue/inputtext'
 import InputMask from 'primevue/inputmask'
 import Button from 'primevue/button'
 import ToggleButton from 'primevue/togglebutton'
-import axios from 'axios'
+import axios from '../../axios-config'
 import Toast from 'primevue/toast'
 import { useToast } from 'primevue/usetoast'
 
@@ -64,7 +64,7 @@ export default defineComponent({
     const toast = useToast()
     async function updateContact(form) {
       try {
-        await axios.put(`http://127.0.0.1:8000/api/update_contato/${form.id}`, form)
+        await axios.put(`update_contato/${form.id}`, form)
         emit('editContract')
         toast.add({ severity: 'success', summary: 'Sucesso', detail: 'Contato editado!', life: 3000 })
       } catch (error) {
