@@ -23,7 +23,7 @@
                 <InputGroupAddon>
                     <i class="pi pi-phone"></i>
                 </InputGroupAddon>
-                <InputMask v-model="form.telefone" mask="(99)-99999-9999" placeholder="Celular" type="text" class="w-21rem" />
+                <InputMask v-model="form.telefone" mask="(99)99999-9999" placeholder="Celular" type="text" class="w-21rem" />
             </InputGroup>
             </div>
           <div class="flex flex-wrap justify-content-center align-items-center gap-2">

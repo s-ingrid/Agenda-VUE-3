@@ -11,7 +11,7 @@
     </div>
     <div class="flex align-items-center gap-3 mb-5">
       <label for="email" class="font-semibold w-6rem">Celular</label>
-      <InputMask v-model="form.telefone" mask="(99)-99999-9999" placeholder="Celular" type="text" class="w-21rem" />
+      <InputMask v-model="form.telefone" mask="(99)99999-9999" placeholder="Celular" type="text" class="w-21rem" />
     </div>
     <div class="flex align-items-center gap-3 mb-5">
       <label for="email" class="font-semibold w-6rem">Whatsapp</label>
