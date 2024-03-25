@@ -19,12 +19,8 @@ Este é um projeto de uma agenda simples desenvolvida em vue. Esta aplicação p
 - Vue Router: Biblioteca para roteamento em aplicativos Vue.js.
 
 ## Como Usar
-- Clone este repositório para o seu ambiente de desenvolvimento local.
-- Certifique-se de ter o Node.js, vite e o npm instalados em sua máquina.
-- Navegue até o diretório do projeto e execute npm install para instalar as dependências.
-- Inicie o servidor de desenvolvimento com npm run dev.
-- Acesse a aplicação através do navegador.
-
-## Tecnologias Utilizadas
-
-- Vue.js
+1. Clone este repositório para o seu ambiente de desenvolvimento local.
+2. Certifique-se de ter o Node.js, vite e o npm instalados em sua máquina.
+3. Navegue até o diretório do projeto e execute npm install para instalar as dependências.
+4. Inicie o servidor de desenvolvimento com npm run dev.
+5. Acesse a aplicação através do navegador.
